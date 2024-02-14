@@ -14,12 +14,14 @@ Good Job on First offical day back!!!
 
 */
 
+//////// List of Emotions /////
 const emotion1 = {
   type: "anxiety",
   imgFile: "anxiety.jpg",
   description: "Feeling of fear,dread or hostility",
   affirmations: "In this moment, I am safe and protected.",
 };
+
 const emotion2 = {
   type: "boredom",
   imgFile: "bordom.jpg",
@@ -35,21 +37,53 @@ const emotion3 = {
   affirmations: "I am resilient in the face on any chanllenge.",
 };
 
-const allEmotions = [emotion1, emotion2, emotion3];
+const emotion4 = {
+  type: "happy",
+  imgFile: "happy.jpg",
+  description:
+    "having a sense of confidence in or satisfaction with (a person, arrangement, or situation)",
+  affirmations: "I hold the key to my own happiness",
+};
+const emotion5 = {
+  type: "anger",
+  imgFile: "anger.jpg",
+  description: "a strong feeling of annoyance, displeasure or hostility",
+  affirmations: "My anger is a signal. Time to talk to myself and to relax.",
+};
+const emotion6 = {
+  type: "lonely",
+  imgFile: "b_lonely.jpg",
+  description: "One has no friends or company.",
+  affirmations: "The longest relationship i'll ever have will be with myself..",
+};
+
+const allEmotions = [
+  emotion1,
+  emotion2,
+  emotion3,
+  emotion4,
+  emotion5,
+  emotion6,
+];
 
 const type = function (type) {
   const emotionType = type;
-  emotionType.map((emo) => console.log(emo.type));
+  emotionType.map((emo) =>
+    console.log(
+      ...emo.type
+        .split()
+        .concat(...emo.imgFile)
+        .join(" ")
+        .split(",")
+    )
+  );
 };
 type(allEmotions);
 
-const newE = allEmotions.filter(function (e) {
-  if (e.type === "boredom") console.log(e.type);
-});
-
+// This can be used to identify user input.
 const filter = allEmotions.filter(function (type) {
   if (type.type === "sad") {
-    console.log(type.type);
+    console.log(...emotion3.description.toUpperCase().split(" "));
   } else {
     return " ";
   }
