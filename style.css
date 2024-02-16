@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  width: 500px;
+  justify-content: center;
+  align-content: center;
+  font-family: "Titan One", cursive;
+  font-size: 50px;
+  font-weight: 700;
+  background: #fff;
+}
+
+h1 span {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+h1 span::before {
+  background: linear-gradient(45deg, #fc5c7d, #6a82fb, #fc5c7d);
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  content: "";
+  mix-blend-mode: screen;
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+}
+
+.card_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  border: 0.5px #fff solid;
+  padding: 4px;
+  box-shadow: 5px 10px #edecec;
+  background: linear-gradient(45deg, #f06883, #fdbb2d, #22c1c3);
+  border-radius: 7.5px;
+}
+.card_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 25px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.btn_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.btn {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: #fff;
+}
+
+.btn1 {
+  color: #fff;
+  background-color: rgb(240, 28, 28);
+  box-shadow: 2px 5px #edecec;
+  cursor: pointer;
+}
+.btn1:hover {
+  opacity: 0.5;
+}
+
+.btn2 {
+  color: #fff;
+  background-color: rgb(46, 46, 243);
+  box-shadow: 2px 5px #edecec;
+  cursor: pointer;
+}
+
+.btn2:hover {
+  opacity: 0.5;
+}
+
+.btn3 {
+  color: #fff;
+  background-color: rgb(255, 166, 0);
+  box-shadow: 2px 5px #edecec;
+  cursor: pointer;
+}
+.btn3:hover {
+  opacity: 0.5;
+}
+
+.btn4 {
+  color: #fff;
+  background-color: green;
+  box-shadow: 2px 5px #edecec;
+  cursor: pointer;
+}
+
+.btn4:hover {
+  opacity: 0.5;
+}
+
+.btn5 {
+  color: #fff;
+  background-color: purple;
+  box-shadow: 2px 5px #edecec;
+  cursor: pointer;
+}
+
+.btn5:hover {
+  opacity: 0.5;
+}
+
+.btn6 {
+  color: #fff;
+  background-color: teal;
+  box-shadow: 2px 5px #edecec;
+  cursor: pointer;
+}
+
+.btn6:hover {
+  opacity: 0.5;
+}
+
+body {
+  line-height: 1.5;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  transform: translate(-50, -50);
+  width: 40%;
+  height: 175px;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3 rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  border: black solid 1px;
+}
+.hidden {
+  display: none;
+}
+.modal_card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  border: solid black 1px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 155, 179, 0.4);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.close-modal {
+  display: flex;
+  width: 50px;
+  background-color: teal;
+  color: white;
+  justify-content: center;
+  border-radius: 10px;
+  border: solid white 1px;
+}

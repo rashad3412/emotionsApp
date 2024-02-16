@@ -5,8 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emotions App</title>
   </head>
+  <link rel="stylesheet" href="style.css" />
   <body>
-    <h1>Manipulate Data!!!</h1>
+    <!-- Header -->
+    <div>
+      <div class="header">
+        <h1 class="text">
+          <span>Artsy Emotions</span>
+        </h1>
+    </div>
+    <!-- Card  -->
+    <div class="card_container">
+            <div class="card_box">
+                <div class="card_text"> How are you feeling today?</div>
+          </div>
+        </div>
+        <div class="btn_container">
+            <button class="btn btn1">Happy</button>
+            <button class="btn btn2">Sad</button>
+            <button class="btn btn3">Angry</button>
+            <button class="btn btn4">Boredom</button>
+            <button class="btn btn5">Lonely</button>
+            <button class="btn btn6">Anxiety</button>
+        </div>
+        <div class="overlay hidden"></div>
+        <div class="modal container hidden">
+            <section class="modal_card">
+                <div>
+                        <button class="close-modal">exit</button>  
+                <h3>Happy</h3>
+                <img src="b_lonely.jpg" alt="happy" width="250px" height="250px" />
+            </div>
+            <div>
+                <p>I hold the key to my own happiness</p>
+                <p>having a sense of confidence in or satisfaction with (a person, arrangement, or situation)</p>
+            </div>
+            <div>
+            </div>
+        </section>
+        
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
