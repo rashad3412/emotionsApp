@@ -83,6 +83,10 @@ h1 span::before {
   background-color: rgb(240, 28, 28);
   box-shadow: 2px 5px #edecec;
   cursor: pointer;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: #fff;
 }
 .btn1:hover {
   opacity: 0.5;
@@ -93,6 +97,10 @@ h1 span::before {
   background-color: rgb(46, 46, 243);
   box-shadow: 2px 5px #edecec;
   cursor: pointer;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: #fff;
 }
 
 .btn2:hover {
@@ -104,6 +112,10 @@ h1 span::before {
   background-color: rgb(255, 166, 0);
   box-shadow: 2px 5px #edecec;
   cursor: pointer;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: #fff;
 }
 .btn3:hover {
   opacity: 0.5;
@@ -170,7 +182,13 @@ body {
 .hidden {
   display: none;
 }
+
 .modal_card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.modal_card2 {
   display: flex;
   align-items: center;
   gap: 10px;
