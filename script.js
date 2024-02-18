@@ -4,10 +4,7 @@
 
 const emotionsBtn = document.querySelectorAll(".btn");
 const modal = document.querySelector(".modal");
-const modal2 = document.querySelector(".hello");
 const overlay = document.querySelector(".overlay");
-const overlay2 = document.querySelector(".overlay2");
-const overlay3 = document.querySelector(".overlay3");
 const btnCloseModal = document.querySelector(".close-modal");
 
 const openModal = function () {
